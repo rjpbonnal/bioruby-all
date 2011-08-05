@@ -17,11 +17,24 @@ Jeweler::Tasks.new do |gem|
   gem.name = "bio-all"
   gem.homepage = "http://github.com/helios/bioruby-all"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{All BioRuby plugins core, core-ext, dev, experimental, etc...}
+  gem.description = %Q{All BioRuby plugins}
   gem.email = "ilpuccio.febo@gmail.com"
-  gem.authors = ["Raoul J.P. Bonnal"]
+  gem.authors = ["Raoul J.P. Bonnal", "Pjotr Prins"]
   # dependencies defined in Gemfile
+  gem.add_runtime_dependency 'bio-core'
+  gem.add_runtime_dependency 'bio-core-ext'
+  gem.add_runtime_dependency 'bio-cnls_screenscraper'
+  gem.add_runtime_dependency 'bio-emboss_six_frame_nucleotide_sequences'
+  gem.add_runtime_dependency 'bio-genomic-interval'
+  gem.add_runtime_dependency 'bio-graphics'
+  gem.add_runtime_dependency 'bio-hello'
+  gem.add_runtime_dependency 'bio-isoelectric_point'
+  gem.add_runtime_dependency 'bio-lazyblastxml'
+  gem.add_runtime_dependency 'bio-nexml'  
+  gem.add_runtime_dependency 'bio-octopus'
+  gem.add_runtime_dependency 'bio-signalp'
+  gem.add_runtime_dependency 'bio-tm_hmm'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
